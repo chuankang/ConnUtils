@@ -6,3 +6,4 @@ D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\C
 D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.AssemblyInfo.cs
 D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.dll
 D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.pdb
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.csprojAssemblyReference.cache

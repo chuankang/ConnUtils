@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "ConnUtils/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/ConnUtils.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/ConnUtils.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -211,6 +220,17 @@
     }
   },
   "libraries": {
+    "ConnUtils/1.0.3": {
+      "sha512": "Qtqg0E58FBfBmf1kf0shaTWR1zVWf3Kx44h2gOWxIIUCEcCb5hyHFP2T7sXtRZKaNoCkRp5UJ5og77xqFz1UyQ==",
+      "type": "package",
+      "path": "connutils/1.0.3",
+      "files": [
+        ".signature.p7s",
+        "connutils.1.0.3.nupkg.sha512",
+        "connutils.nuspec",
+        "lib/netcoreapp2.1/ConnUtils.dll"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
       "type": "package",
@@ -677,6 +697,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ConnUtils >= 1.0.3",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -722,6 +743,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "ConnUtils": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",
