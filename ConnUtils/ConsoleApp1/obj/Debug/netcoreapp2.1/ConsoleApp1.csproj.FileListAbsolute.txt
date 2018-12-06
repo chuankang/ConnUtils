@@ -1,0 +1,11 @@
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.deps.json
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.json
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.runtimeconfig.dev.json
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.dll
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\bin\Debug\netcoreapp2.1\ConsoleApp1.pdb
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csprojAssemblyReference.cache
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfoInputs.cache
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.AssemblyInfo.cs
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.dll
+D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConsoleApp1\obj\Debug\netcoreapp2.1\ConsoleApp1.pdb

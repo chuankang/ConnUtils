@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>Conn</Authors>
+    <Product>Conn</Product>
+    <Description>公共类库</Description>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+</Project>
