@@ -1,9 +1,0 @@
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\bin\Debug\netcoreapp2.1\ConnUtils.deps.json
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\bin\Debug\netcoreapp2.1\ConnUtils.dll
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\bin\Debug\netcoreapp2.1\ConnUtils.pdb
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.csproj.CoreCompileInputs.cache
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.AssemblyInfoInputs.cache
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.AssemblyInfo.cs
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.dll
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.pdb
-D:\OwnSpace\gitConnUtils\ConnUtils\ConnUtils\ConnUtils\obj\Debug\netcoreapp2.1\ConnUtils.csprojAssemblyReference.cache
