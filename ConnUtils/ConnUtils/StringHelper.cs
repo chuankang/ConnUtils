@@ -26,7 +26,7 @@ namespace ConnUtils
     public class StringHelper
     {
         /// <summary>
-        /// 把字符串按照分隔符转换成 List
+        /// 把字符串按照分隔符转换成List
         /// </summary>
         /// <param name="str">源字符串</param>
         /// <param name="speater">分隔符</param>
@@ -52,60 +52,13 @@ namespace ConnUtils
         }
 
         /// <summary>
-        /// 把字符串转 按照, 分割 换为数据
+        /// 把字符串按照逗号分割为string[]
         /// </summary>
-        /// <param name="str"></param>
+        /// <param name="str">要分割的字符串</param>
         /// <returns></returns>
         public static string[] GetStrArray(string str)
         {
-            return str.Split(new Char[] { ',' });
-        }
-
-        /// <summary>
-        /// 把 List<string> 按照分隔符组装成 string
-        /// </summary>
-        /// <param name="list"></param>
-        /// <param name="speater"></param>
-        /// <returns></returns>
-        public static string GetArrayStr(List<string> list, string speater)
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (i == list.Count - 1)
-                {
-                    sb.Append(list[i]);
-                }
-                else
-                {
-                    sb.Append(list[i]);
-                    sb.Append(speater);
-                }
-            }
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// 得到数组列表以逗号分隔的字符串
-        /// </summary>
-        /// <param name="list"></param>
-        /// <returns></returns>
-        public static string GetArrayStr(List<int> list)
-        {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (i == list.Count - 1)
-                {
-                    sb.Append(list[i].ToString());
-                }
-                else
-                {
-                    sb.Append(list[i]);
-                    sb.Append(",");
-                }
-            }
-            return sb.ToString();
+            return str.Split(new[] { ',' });
         }
 
         /// <summary>
@@ -163,6 +116,7 @@ namespace ConnUtils
                 if (c[i] < 127)
                     c[i] = (char)(c[i] + 65248);
             }
+
             return new string(c);
         }
 

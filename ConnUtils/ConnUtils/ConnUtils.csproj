@@ -1,11 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Conn</Authors>
     <Product>Conn</Product>
     <Description>公共类库</Description>
-    <Version>1.0.3</Version>
+    <Version>1.0.6</Version>
+    <PackageIconUrl>https://files-cdn.cnblogs.com/files/chuankang/photo.bmp</PackageIconUrl>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.5.0</FileVersion>
   </PropertyGroup>
 
 </Project>

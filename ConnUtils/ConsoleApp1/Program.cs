@@ -10,6 +10,7 @@ namespace ConsoleApp1
         {
             var list = new List<int>();
             Utils.ListToTable(list);
+            var str = StringHelper.ClipString("232323", 2);
             Console.WriteLine();
         }
     }
