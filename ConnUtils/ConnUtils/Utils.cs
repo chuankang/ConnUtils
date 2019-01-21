@@ -106,5 +106,22 @@ namespace ConnUtils
             }
             return encode;
         }
+        
+        /// <summary>
+        /// 生成指定位数的随机码（数字）
+        /// </summary>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static string GenerateRandomCode(int length = 6)
+        {
+            var sb = new StringBuilder();
+            for (var i = 0; i < length; i++)
+            {
+                var random = new Random(Guid.NewGuid().GetHashCode());
+                sb.Append(random.Next(0, 10));
+            }
+
+            return sb.ToString();
+        }
     }
 }
