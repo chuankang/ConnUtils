@@ -9,3 +9,8 @@
 /ConnUtils/ConsoleApp1
 /ConnUtils/.vs/ConnUtils/DesignTimeBuild/.dtbcache
 /ConnUtils/ConnUtils/bin/Debug/netcoreapp2.2
+/ConnUtils/CoreConsoleApp/bin/Debug/netcoreapp2.2
+/ConnUtils/CoreConsoleApp/obj/Debug/netcoreapp2.2
+/ConnUtils/CoreConsoleApp/obj
+/ConnUtils/FxConsoleApp/bin/Debug
+/ConnUtils/FxConsoleApp/obj/Debug
