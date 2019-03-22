@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -88,15 +89,22 @@ namespace FxConsoleApp
 
         private static void TestThreadSafe()
         {
-            List<Student> list = new List<Student>();
-            Parallel.For(0, 100_000, i =>
+            //线程不安全
+            var list = new List<Student>();
+            //线程安全
+            var bag = new ConcurrentBag<Student>();
+             
+            Parallel.For(0, 100000, i =>
             {
                 list.Add(new Student { Age = i });
+                bag.Add(new Student { Age = i });
+                //10w数据分布在不同的线程下执行
+                Console.Write(Thread.CurrentThread.ManagedThreadId);
             });
-
+            Console.WriteLine("==============");
             Console.WriteLine(list.Count);
+            Console.WriteLine(bag.Count);
         }
-
 
         #endregion
     }
