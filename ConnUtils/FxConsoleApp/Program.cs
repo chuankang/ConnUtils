@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FxConsoleApp
@@ -11,7 +13,8 @@ namespace FxConsoleApp
     {
         static void Main(string[] args)
         {
-            TestException();
+            TestThreadSafe();
+
             Console.ReadLine();
         }
 
@@ -51,7 +54,6 @@ namespace FxConsoleApp
         private static void TestException()
         {
             var sw = new Stopwatch();
-
             sw.Start();
             for (int i = 0; i < 100; i++)
             {
@@ -61,12 +63,8 @@ namespace FxConsoleApp
                 }
                 catch { }
             }
-
-
             sw.Stop();
-
-            Console.WriteLine($"FX调用栈抛异常:{sw.ElapsedMilliseconds}毫秒");//1341
-
+            Console.WriteLine($"FX调用栈抛异常:{sw.ElapsedMilliseconds}毫秒");//590
 
             var sw2 = new Stopwatch();
             sw2.Start();
@@ -79,12 +77,33 @@ namespace FxConsoleApp
                 catch { }
             }
             sw2.Stop();
-            Console.WriteLine($"FX调用栈的深入抛异常:{sw2.ElapsedMilliseconds}毫秒");//1341
-
+            Console.WriteLine($"FX调用栈的深入抛异常:{sw2.ElapsedMilliseconds}毫秒");//597
 
             Console.ReadLine();
         }
 
         #endregion
+
+        #region 测试线程安全
+
+        private static void TestThreadSafe()
+        {
+            List<Student> list = new List<Student>();
+            Parallel.For(0, 100_000, i =>
+            {
+                list.Add(new Student { Age = i });
+            });
+
+            Console.WriteLine(list.Count);
+        }
+
+
+        #endregion
+    }
+
+    public class Student
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
     }
 }
