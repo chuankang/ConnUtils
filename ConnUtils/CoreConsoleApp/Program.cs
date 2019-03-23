@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Models;
 
 namespace CoreConsoleApp
 {
@@ -92,13 +93,6 @@ namespace CoreConsoleApp
             Console.WriteLine(list.Count);
         }
 
-
         #endregion
-    }
-
-    public class Student
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
     }
 }

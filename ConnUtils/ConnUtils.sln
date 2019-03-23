@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnUtils", "ConnUtils\Conn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FxConsoleApp", "FxConsoleApp\FxConsoleApp.csproj", "{FBF16551-064E-414A-B5FA-DA8D96C7DDF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreConsoleApp", "CoreConsoleApp\CoreConsoleApp.csproj", "{2E93FD14-B069-4E7E-80B7-D147344AB14E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreConsoleApp", "CoreConsoleApp\CoreConsoleApp.csproj", "{2E93FD14-B069-4E7E-80B7-D147344AB14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{04CE685E-D1CA-40A6-8EEC-5EDF6BFAE5C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2E93FD14-B069-4E7E-80B7-D147344AB14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E93FD14-B069-4E7E-80B7-D147344AB14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E93FD14-B069-4E7E-80B7-D147344AB14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CE685E-D1CA-40A6-8EEC-5EDF6BFAE5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CE685E-D1CA-40A6-8EEC-5EDF6BFAE5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CE685E-D1CA-40A6-8EEC-5EDF6BFAE5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CE685E-D1CA-40A6-8EEC-5EDF6BFAE5C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

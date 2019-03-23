@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -93,7 +94,7 @@ namespace FxConsoleApp
             var list = new List<Student>();
             //线程安全
             var bag = new ConcurrentBag<Student>();
-             
+
             Parallel.For(0, 100000, i =>
             {
                 list.Add(new Student { Age = i });
@@ -107,11 +108,5 @@ namespace FxConsoleApp
         }
 
         #endregion
-    }
-
-    public class Student
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
     }
 }

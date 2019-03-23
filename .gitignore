@@ -14,3 +14,5 @@
 /ConnUtils/CoreConsoleApp/obj
 /ConnUtils/FxConsoleApp/bin/Debug
 /ConnUtils/FxConsoleApp/obj/Debug
+/ConnUtils/Models/bin/Debug/netstandard2.0
+/ConnUtils/Models/obj
