@@ -9,7 +9,7 @@ namespace ConnUtils
     public class Utils
     {
         /// <summary>
-        /// List转DataTable 
+        /// List转DataTable
         /// </summary>
         public static DataTable ListToTable<T>(IList<T> list)
         {
