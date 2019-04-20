@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using FxConsoleApp.ORM;
 
 namespace FxConsoleApp
 {
@@ -15,7 +16,36 @@ namespace FxConsoleApp
     {
         static void Main(string[] args)
         {
-            TestThreadSafe();
+            var y = new FluentDataTest();
+            y.DoWork();
+
+            var x = new DapperTest();
+            x.DoWork();
+
+            var z = new PetapocoTest();
+            z.DoWork();
+           
+
+            //IWork work;
+
+            //var serverType = System.Configuration.ConfigurationManager.AppSettings["serverType"];
+            //switch (serverType)
+            //{
+            //    case "DapperTest":
+            //        work = new DapperTest();
+            //        work.DoWork();;
+            //        break;
+
+            //    case "PetapocoTest":
+            //        work = new PetapocoTest();
+            //        work.DoWork();
+            //        break;
+
+            //    case "FluentDataTest":
+            //        work = new FluentDataTest();
+            //        work.DoWork();
+            //        break;
+            //}
 
             Console.ReadLine();
         }
