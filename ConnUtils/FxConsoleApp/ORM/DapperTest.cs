@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
-using FxConsoleApp.Utils;
-using Models;
 
 namespace FxConsoleApp.ORM
 {
@@ -22,7 +15,7 @@ namespace FxConsoleApp.ORM
             var sw = new Stopwatch();
             sw.Start();
 
-            for (var i = 0; i < 1000; i++)
+            for (var i = 0; i < 10000; i++)
             {
                 var sql = $@"
                 INSERT INTO dbo.Student
@@ -41,7 +34,7 @@ namespace FxConsoleApp.ORM
 
             sw.Stop();
 
-            Console.WriteLine($"Dapper插入1000条耗时:{sw.ElapsedMilliseconds}毫秒");
+            Console.WriteLine($"Dapper插入10000条耗时:{sw.ElapsedMilliseconds}毫秒");
 
         }
     }

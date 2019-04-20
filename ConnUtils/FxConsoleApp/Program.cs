@@ -16,6 +16,8 @@ namespace FxConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(" ");
+
             var y = new FluentDataTest();
             y.DoWork();
 
