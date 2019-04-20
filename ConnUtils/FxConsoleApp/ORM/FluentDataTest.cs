@@ -24,20 +24,22 @@ namespace FxConsoleApp.ORM
                          ( Name ,
                            Age ,
                            Sex ,
-                           Birthday
+                           Birthday ,
+                           Address
                          )
                  VALUES  ( N'james' , -- Name - nvarchar(20)
                            {i}, -- Age - int
                            N'男' , -- Sex - nvarchar(5)
-                           GETDATE()+{i}
+                           GETDATE()+{i} ,
+                           'FluentData'
                          ) ";
-                context.Sql(sql);
+                context.Sql(sql).Execute();
             }
 
             sw.Stop();
 
             Console.WriteLine($"FluentData插入10000条耗时:{sw.ElapsedMilliseconds}毫秒");
         }
-        
+
     }
 }

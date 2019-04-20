@@ -8,6 +8,7 @@ namespace Models
         public int Age { get; set; }
         public string Sex { get; set; }
         public DateTime Birthday { get; set; }
+        public string Address { get; set; }
         public bool IsDelete { get; set; }
         public DateTime CreateTime { get; set; }
     }

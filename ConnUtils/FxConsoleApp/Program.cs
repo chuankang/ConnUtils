@@ -18,16 +18,13 @@ namespace FxConsoleApp
         {
             Console.WriteLine(" ");
 
-            var y = new FluentDataTest();
-            y.DoWork();
-
             var x = new DapperTest();
             x.DoWork();
-
+            var y = new FluentDataTest();
+            y.DoWork();
             var z = new PetapocoTest();
             z.DoWork();
            
-
             //IWork work;
 
             //var serverType = System.Configuration.ConfigurationManager.AppSettings["serverType"];
