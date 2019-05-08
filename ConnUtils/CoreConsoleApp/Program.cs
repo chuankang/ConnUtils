@@ -11,14 +11,17 @@ namespace CoreConsoleApp
     {
         static void Main(string[] args)
         {
-
-            var isCard = IdentityCardValidation.CheckIdCard("410329199202108907");
+            var isCard = IdentityCardValidation.CheckIdCard("");
 
             if (!isCard)
             {
                 Console.WriteLine("身份证格式不正确");
             }
-            Console.WriteLine("身份证格式正确");
+            else
+            {
+                Console.WriteLine("身份证格式正确");
+            }
+           
             Console.ReadLine();
         }
 
