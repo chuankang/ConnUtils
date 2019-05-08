@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ConnUtils\ConnUtils.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 

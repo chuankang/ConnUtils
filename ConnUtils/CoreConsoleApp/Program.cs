@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using ConnUtils;
 using Models;
 
 namespace CoreConsoleApp
@@ -10,7 +11,14 @@ namespace CoreConsoleApp
     {
         static void Main(string[] args)
         {
-            TestThreadSafe();
+
+            var isCard = IdentityCardValidation.CheckIdCard("410329199202108907");
+
+            if (!isCard)
+            {
+                Console.WriteLine("身份证格式不正确");
+            }
+            Console.WriteLine("身份证格式正确");
             Console.ReadLine();
         }
 
