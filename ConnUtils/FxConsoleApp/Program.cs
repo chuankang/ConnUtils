@@ -18,13 +18,19 @@ namespace FxConsoleApp
         {
             Console.WriteLine(" ");
 
+
+            Console.ReadLine();
+        }
+
+        private static void Begin()
+        {
             var x = new DapperTest();
             x.DoWork();
             var y = new FluentDataTest();
             y.DoWork();
             var z = new PetapocoTest();
             z.DoWork();
-           
+
             //IWork work;
 
             //var serverType = System.Configuration.ConfigurationManager.AppSettings["serverType"];
@@ -45,9 +51,8 @@ namespace FxConsoleApp
             //        work.DoWork();
             //        break;
             //}
-
-            Console.ReadLine();
         }
+
 
         #region 测试装箱
 
@@ -135,6 +140,12 @@ namespace FxConsoleApp
             Console.WriteLine(list.Count);
             Console.WriteLine(bag.Count);
         }
+
+        #endregion
+
+        #region MyRegion
+
+        
 
         #endregion
     }
