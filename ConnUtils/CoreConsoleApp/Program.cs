@@ -11,7 +11,7 @@ namespace CoreConsoleApp
     {
         static void Main(string[] args)
         {
-            var isCard = IdentityCardValidation.CheckIdCard("341111199307144972");
+            var isCard = IdentityCardValidation.CheckIdCard("");
 
             if (!isCard)
             {
