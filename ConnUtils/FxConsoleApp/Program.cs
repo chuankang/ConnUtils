@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using FxConsoleApp.ORM;
+using Aspose.Words;
+//using Aspose.Pdf;
 
 namespace FxConsoleApp
 {
@@ -18,6 +20,7 @@ namespace FxConsoleApp
         {
             Console.WriteLine(" ");
 
+            Word2Pdf("D:/document/test.pdf", "D:/document/test.docx");
 
             Console.ReadLine();
         }
@@ -143,9 +146,33 @@ namespace FxConsoleApp
 
         #endregion
 
-        #region test1
+        #region 【world to pdf】 and 【pdf to world】
 
-        //test3 
+        /// <summary>
+        /// World转PDF 引用using Aspose.Words; 调用： Word2Pdf("D:/document/test.pdf", "D:/document/test.docx");
+        /// </summary>
+        /// <param name="srcDocPath">源文件路径</param>
+        /// <param name="dstPdfPath">保存的路径</param>
+        public static void Word2Pdf(string srcDocPath, string dstPdfPath)
+        {
+            // Load the document from disk.
+            var srcDoc = new Document(srcDocPath);
+            // 保存为pdf
+            srcDoc.Save(dstPdfPath, SaveFormat.Pdf);
+        }
+
+        // <summary>
+        // PDF转World 引用using Aspose.Pdf;
+        // </summary>
+        // <param name="srcDocPath">源文件路径</param>
+        // <param name="dstPdfPath">保存的路径</param>
+        //public static void Pdf2World(string srcDocPath, string dstPdfPath)
+        //{
+        //    // Load the document from disk.
+        //    var srcDoc = new Document(srcDocPath);
+        //    // 保存为world
+        //    srcDoc.Save(dstPdfPath, SaveFormat.DocX);
+        //}
 
         #endregion
     }
